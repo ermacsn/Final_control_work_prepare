@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "final_control_ work_prepare/1.0.0": {
+        "runtime": {
+          "final_control_ work_prepare.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "final_control_ work_prepare/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

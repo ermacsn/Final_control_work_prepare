@@ -1,0 +1,15 @@
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/bin/Debug/net7.0/final_control_ work_prepare
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/bin/Debug/net7.0/final_control_ work_prepare.deps.json
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/bin/Debug/net7.0/final_control_ work_prepare.runtimeconfig.json
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/bin/Debug/net7.0/final_control_ work_prepare.dll
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/bin/Debug/net7.0/final_control_ work_prepare.pdb
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/final_control_ work_prepare.csproj.AssemblyReference.cache
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/final_control_ work_prepare.GeneratedMSBuildEditorConfig.editorconfig
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/final_control_ work_prepare.AssemblyInfoInputs.cache
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/final_control_ work_prepare.AssemblyInfo.cs
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/final_control_ work_prepare.csproj.CoreCompileInputs.cache
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/final_control_ work_prepare.dll
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/refint/final_control_ work_prepare.dll
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/final_control_ work_prepare.pdb
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/final_control_ work_prepare.genruntimeconfig.cache
+/home/ermac_/Work/GeekBrains/Prepare/final_control_ work_prepare/obj/Debug/net7.0/ref/final_control_ work_prepare.dll
