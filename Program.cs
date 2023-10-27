@@ -30,9 +30,9 @@ while (count_b < strArray.Length)
     count_a = count_a + 1;
 }
 
-Console.WriteLine($"Количество переводов каретки: {count_a}");
-Console.WriteLine($"Элементы отсортированного массива: ");
-Console.WriteLine(strArray);
+//Console.WriteLine($"Количество переводов каретки: {count_a}");
+//Console.WriteLine($"Элементы отсортированного массива: ");
+//Console.WriteLine(strArray);
 
 
 //Формируем выходной массив
