@@ -1,84 +1,52 @@
-﻿using System.Formats.Asn1;
-using System.Xml.Serialization;
-using Microsoft.Win32.SafeHandles;
+﻿// Задаем начальный массив строк
+string[] inputArray = {"12", "3345", "qwe", "rt", "dsfg", "gd", "d", ""," ", "gfh", "ghfh"}; //исходный массив
 
-// Задаем начальные параметры
-string[] array = {"123345", "qweert", "dsfggdgd", "gfhghfh"}; //исходный массив
-int randomMax = 4;
-int randomMin = 0;
-
-var random = new Random();
-
-//Собираем из элементов исходного массива строку
-string strArray = "";
-foreach (var item in array)
+//функция удаляет строки у которых количество символав больше трех
+//в качестве результата выводится количество строк,в которых символов меньше либо равно 3 
+int ArraySort(string[] array) 
 {
-    strArray += item;
-}
-Console.WriteLine(strArray); // Выводим строку для сравнения 
-Console.WriteLine($"Количество элементов от {randomMin} до {randomMax}.");
-
-//Разделяем строку символом "\n" на части. Количество элементов в каждой части от randomMin до randomMax
-int count_b = 0;
-int count_a = 0; // количество символов перевод каретки
-while (count_b < strArray.Length)
-{
-    count_b = count_b + random.Next(randomMin, randomMax);
-    if (count_b > strArray.Length) break; 
-    strArray = strArray.Insert(count_b, "\n");
-    count_b = count_b + 1;
-    count_a = count_a + 1;
-}
-
-//Console.WriteLine($"Количество переводов каретки: {count_a}");
-//Console.WriteLine($"Элементы отсортированного массива: ");
-//Console.WriteLine(strArray);
-
-
-//Формируем выходной массив
-string[] resultArray = new string [count_a + 1]; 
-int count_j = 0; // индекс элементов выходного массива
-for (int i = 0; i < strArray.Length; i++)
-{
-    if (strArray[i] == '\n') count_j = count_j + 1;
-    else 
+     int count = 0;
+    for (int i = 0; i < array.Length; i++)
     {
-        resultArray[count_j] = resultArray[count_j] + strArray[i];
-    } 
-}
-
-//Выводим массив
-Console.WriteLine("Выходной массив: ");
-for (int i = 0; i < resultArray.Length; i++)
-{
-      Console.WriteLine(resultArray[i]);    
-}
-
-
-/*
-Это еще один вариант решения
-string[] resultArray = new string [strArray.Length]; // ограничивающее условие: количество элементов в выходном массиве не больше, чем во входном символов 
-
-int n = 0;
-for (int i = 0; i < resultArray.Length; i++)
-{
-    if (n < strArray.Length - 1)
-    {
-        int k = random.Next(0,2);
-        if (strArray.Length - n < k) k = strArray.Length - n;
-        for (int j = 0; j < k; j++)
+        if (array[i].Length <= 3 ) 
         {
-            resultArray[i] = resultArray[i] + strArray[n];
-            n = n + 1;
+             count += 1;
+        }
+        else
+        {          
+            array[i] = "\n";
         }
     }
-    else resultArray[i] = "\n";    
+    return count;   
 }
-   
-for (int a = 0; a < resultArray.Length; a++)
-{
-    if (resultArray[a] == "\n") break;
-    Console.WriteLine(resultArray[a]);    
-}
-*/
 
+//функция формирует выходной массив
+string[] ArrayClear(int lengthArray, string[] array)
+{
+    string[] newArray = new string [lengthArray];
+    int index = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] != "\n")
+        {
+            newArray[index] = array[i];
+            index += 1;
+        }    
+    }
+
+    return newArray;
+}
+
+//функция выводит в консоль выходной массив
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length ; i++)
+    {
+        Console.WriteLine(array[i]);
+    }
+}
+
+//Вывод результата
+int count = ArraySort(inputArray);
+string[] resultArray = ArrayClear(count, inputArray);
+PrintArray(resultArray);
